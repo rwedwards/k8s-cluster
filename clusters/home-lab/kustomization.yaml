@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../infrastructure/calico/calico.yaml
+  - ../../infrastructure/metallb/metallb-config.yaml
+  - ../../apps/test-nginx/deployment.yaml
+  - ../../apps/test-nginx/service.yaml
+
